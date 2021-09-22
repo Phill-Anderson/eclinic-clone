@@ -4,7 +4,7 @@
 
 @layer components {
   .menuItem {
-    @apply text-white text-sm text-opacity-50 font-semibold px-4 hover:text-white;
+    @apply relative text-white text-sm text-opacity-50 font-semibold px-4 hover:text-white;
   }
   .wrapper {
     @apply max-w-[1170px] mx-auto;
@@ -16,7 +16,7 @@
     @apply inline-block p-3 bg-white bg-opacity-20 rounded-full;
   }
   .item-title {
-    @apply text-white text-opacity-50 text-sm font-bold text-left  pl-4 pr-8 border-r   md:border-white md:border-opacity-10;
+    @apply text-white text-opacity-50 text-sm font-bold text-left  pl-4 pr-8 md:border-r   md:border-white md:border-opacity-10;
   }
   .box {
     @apply flex-1 relative w-full md:w-[180px] py-14 mb-4 md:mr-2  last:mr-0 rounded shadow-lg;
@@ -32,6 +32,12 @@
   }
   .footer-social {
     @apply p-3 mr-1 border border-white border-opacity-20 bg-black bg-opacity-10 rounded-full cursor-pointer hover:bg-white hover:text-black hover:text-opacity-80;
+  }
+  .sub-menu-container {
+    @apply flex flex-col  justify-center my-4 py-2 bg-white text-gray-400 rounded shadow-xl;
+  }
+  .sub-menu-item {
+    @apply flex  py-2 pl-4 border-b border-gray-500 border-opacity-25 last:border-none cursor-pointer hover:bg-blue-100 transition duration-300;
   }
 }
 body {
