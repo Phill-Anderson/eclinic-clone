@@ -85,7 +85,6 @@ const Menu = () => {
             </div>
             <div className="hidden md:block ml-[300px] mt-5">
                 <MenuItem text='Шинжилгээ' extraText='Онцлох' />
-                <MenuItem text='Шинжилгээ' />
                 <MenuItem text='Онлайн зөвлөгөө' />
                 <MenuItem text='Цаг авах' />
                 <MenuItem text='Дуудлага' />

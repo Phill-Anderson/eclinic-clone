@@ -7,21 +7,11 @@ import { GiDuration } from 'react-icons/gi'
 import { BsBuilding } from 'react-icons/bs'
 import { BiPhoneCall } from 'react-icons/bi'
 import { RiHealthBookLine } from 'react-icons/ri'
-import { slideUp, fadeVariants } from '../framer/animate'
+import { slideUp, fadeVariants, iconVariants } from '../framer/animate'
 
 import SliderBottomIcons from './SliderBottomIcons'
 
-const iconVariants = {
-    visible: (i) => ({
-        opacity: 1,
-        transition: {
-            delay: i * 0.6
-        }
-    }),
-    hidden: {
-        opacity: 0
-    }
-}
+
 const Slider = () => {
     const bottomIconText = [
         { id: 1, text: 'Лабораторийн жагсаалт', icon: <ImLab className="text-white text-opacity-60 text-[24px]" /> },

@@ -6,6 +6,7 @@ import { TiSocialTwitter } from 'react-icons/ti'
 import { CgYoutube } from 'react-icons/cg'
 import { SiMinutemailer } from 'react-icons/si'
 import { BiPhoneCall } from 'react-icons/bi'
+
 const Footer = () => {
     return (
         <footer className="pt-20 pb-8 bg-[#2b4399]">

@@ -4,6 +4,19 @@ export function rotX({ rotate, x }) {
 export function scaleButton({ }) {
     return 0;
 }
+
+//ээлж ээлжээрээ animate хийх функц
+export const iconVariants = {
+    visible: (i) => ({
+        opacity: 1,
+        transition: {
+            delay: i * 0.6
+        }
+    }),
+    hidden: {
+        opacity: 0
+    }
+}
 export const fadeVariants = {
     start: {
         opacity: 0,
@@ -41,5 +54,19 @@ export const slideUp = {
             damping: 5,
             delay: 1
         }
+    }
+}
+
+export const delaySlideUpVariants = {
+    visible: (i) => ({
+        opacity: 1,
+        y: '0px',
+        transition: {
+            delay: i * 0.6
+        }
+    }),
+    hidden: {
+        opacity: 0,
+        y: '500px'
     }
 }
